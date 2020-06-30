@@ -7,7 +7,7 @@
     "start": "node dist/app.js",
     "start2": "tsc && node dist/app.js",
     "postinstall": "npm run build-ts",
-    "build-ts": "tsc",
+    "build-ts": "tsc -p .",
     "dev": "nodemon src/app.ts",
     "build": "tsc -p ."
   },
