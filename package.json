@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node dist/app.js",
+    "start1": "tsc && node dist/app.js",
+    "tsc": "tsc",
+    "postinstall": "npm run tsc",
     "dev": "nodemon src/app.ts",
     "build": "tsc -p ."
   },
