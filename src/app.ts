@@ -21,7 +21,8 @@ app.get('/beer', (req: Request, resp: Response) => {
 });
 
 app.listen(port, err => {
-    if (err)
+    if (err) {
       return console.error(err);
+    }
     return console.log(`server is listening on ${port}`);
 });
