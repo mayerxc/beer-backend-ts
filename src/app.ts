@@ -5,7 +5,7 @@ const port: number = Number(process.env.PORT) || 3000;
 
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('HomePage');
+    res.send(`Please visit "/beer" to get the JSON`);
 });
 
 app.get('/beer', (req: Request, resp: Response) => {
