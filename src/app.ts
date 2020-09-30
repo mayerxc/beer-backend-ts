@@ -12,7 +12,7 @@ app.get('/beer', (req: Request, resp: Response) => {
   (async () => {
     try {
       const beerList: Brewery[] = await treeHouseGet();
-      console.log(beerList)
+      // console.log(beerList)
       resp.json(beerList);
     } catch (error) {
       resp.json({'status': error});

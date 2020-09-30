@@ -45,7 +45,6 @@ export async function treeHouseGet(): Promise<Brewery[]> {
       }
     }
   );
-  console.log('beerList:', beerList);
   return beerList
 }
 
